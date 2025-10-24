@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandeel - Static Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Kandeel</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Kandeel</h2>
+                <p>Your modern static website built with CI/CD</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>This is a static website built with modern web technologies and deployed using Docker and GitHub Actions.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>DevOps</h3>
+                        <p>CI/CD and containerization</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for your next project.</p>
+                <a href="mailto:contact@kandeel.local" class="contact-button">Contact</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kandeel. Built with ❤️ and GitHub Actions.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
