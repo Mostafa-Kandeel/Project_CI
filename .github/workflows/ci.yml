@@ -29,8 +29,8 @@ jobs:
         html-validate frontend/index.html
         
     - name: Test Docker build
+      working-directory: ./frontend
       run: |
-        cd ./frontend
         docker build -t kandeel-website:test .
         docker run --rm -d --name new1-container -p 8080:80 kandeel-website:test
         sleep 5
