@@ -29,6 +29,7 @@ jobs:
         
     - name: Test Docker build
       run: |
+        cd ./frontend
         docker build -t kandeel-website:test .
         docker run --rm -d --name test-container -p 8080:80 kandeel-website:test
         sleep 5
