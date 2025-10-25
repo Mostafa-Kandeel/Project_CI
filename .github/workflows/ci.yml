@@ -30,9 +30,9 @@ jobs:
         
     - name: Test Docker build
       run: |
-        
-        docker build -t kandeel-website:test -f ./frontend
-        docker run --rm -d --name new-container -p 8080:80 kandeel-website:test
+        cd ./frontend
+        docker build -t kandeel-website:test .
+        docker run --rm -d --name new1-container -p 8080:80 kandeel-website:test
         sleep 5
         curl -f http://localhost:8080 || exit 1
         docker stop test-container
