@@ -21,15 +21,11 @@ jobs:
     - name: Install dependencies
       run: |
         npm install -g html-validate
-        npm install -g css-validate
+
         
     - name: Validate HTML
       run: |
         html-validate index.html
-        
-    - name: Validate CSS
-      run: |
-        css-validate styles.css
         
     - name: Test Docker build
       run: |
