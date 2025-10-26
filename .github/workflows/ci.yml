@@ -27,7 +27,8 @@ jobs:
       run: |
         for file in $(find . -name "*.css"); do
           echo "Linting $file"
-          npx stylelint "$file" --config '{"extends":"stylelint-config-standard"}' || exit 1
+          npx stylelint "$file" --config '{\"extends\": \"stylelint-config-standard\"}' || exit 1
+
         done
 
       
