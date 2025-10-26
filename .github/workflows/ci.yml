@@ -20,7 +20,7 @@ jobs:
         
     - name: Validate HTML
       run: |
-        html-validate frontend/index.html
+        html-validate index.html
         
     - name: Test Docker build
       run: |
