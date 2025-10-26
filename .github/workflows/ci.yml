@@ -64,7 +64,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: ${{ secrets.DOCKER_USERNAME }}/kandeel-website
+        images: ${{ secrets.DOCKER_USERNAME }}/website_ci
         tags: |
           type=ref,event=branch
           type=sha,prefix={{branch}}-
