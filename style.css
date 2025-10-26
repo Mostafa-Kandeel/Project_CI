@@ -123,5 +123,39 @@ nav ul li a {
 
 .team-info h3 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
 
+.team-columns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.member {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.member p {
+  margin: 5px 0;
+  font-size: 1.05em;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }
