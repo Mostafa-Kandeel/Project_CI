@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?fit=crop&w=1400&q=80') center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1554284126-aa88f22d8b74?fit=crop&w=1400&q=80") center/cover no-repeat;
   color: #fff;
   padding: 100px 20px;
   text-align: center;
@@ -78,10 +78,13 @@ nav ul li a {
   padding: 20px;
   flex: 1;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
 }
 
-.about,
+.about {
+  padding: 60px 20px;
+}
+
 .contact {
   padding: 60px 20px;
 }
@@ -103,55 +106,20 @@ nav ul li a {
 
 .contact button {
   background: #e91e63;
-  color: white;
+  color: #fff;
   padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .team-info {
   margin-top: 30px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
 }
 
 .team-info h3 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.team-columns {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.team-column {
-  flex: 1;
-  min-width: 250px;
-}
-
-.member {
-  background-color: #fff;
-  padding: 10px 15px;
-  border-left: 4px solid #3498db;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.member p {
-  margin: 5px 0;
-  font-size: 1.05em;
-}
-
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
