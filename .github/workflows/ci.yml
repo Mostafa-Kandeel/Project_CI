@@ -29,7 +29,7 @@ jobs:
         sleep 5
         curl -f http://localhost:8080 || exit 1
         docker stop test-container
-      working-directory: ./frontend
+      
 
   build-and-push:
     needs: test
