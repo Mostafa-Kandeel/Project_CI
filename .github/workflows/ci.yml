@@ -36,7 +36,7 @@ jobs:
     - name: Test Docker build
       run: |
         docker build -t kandeel-website:test .
-        docker run --rm -d --name test-container -p 8080:80 kandeel-website:test
+        docker run --rm -d --name test-container -p 8080:82 kandeel-website:test
         sleep 5
         curl -f http://localhost:8080 || exit 1
         docker stop test-container
