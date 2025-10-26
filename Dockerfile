@@ -15,7 +15,8 @@ COPY sites-enabled/ /etc/nginx/sites-enabled/
 
 # Copy static website files
 COPY index.html /var/www/kandeel/
-COPY style.css /var/www/kandeel/
+COPY style.css /var/www/kandeel
+
 
 
 # Create symlink for site configuration
