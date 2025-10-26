@@ -16,11 +16,21 @@ jobs:
     - name: Install dependencies
       run: |
         npm install -g html-validate
+        npm install -g stylelint stylelint-config-standard
 
         
     - name: Validate HTML
       run: |
         html-validate index.html
+
+    - name: Validate CSS syntax
+      run: |
+        for file in $(find . -name "*.css"); do
+          echo "Linting $file"
+          npx stylelint "$file" --config '{"extends":"stylelint-config-standard"}' || exit 1
+        done
+
+      
     
         
     - name: Test Docker build
