@@ -11,7 +11,7 @@ RUN mkdir -p /var/www/kandeel /var/log/nginx
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY sites-available/ /etc/nginx/sites-available/
-COPY sites-enabled/ /etc/nginx/sites-enabled/
+#COPY sites-enabled/ /etc/nginx/sites-enabled/
 
 # Copy static website files
 COPY index.html /var/www/kandeel/
