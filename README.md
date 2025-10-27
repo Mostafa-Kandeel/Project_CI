@@ -13,15 +13,14 @@ A modern static website built with HTML, CSS, and JavaScript, deployed using Doc
 ## 📁 Project Structure
 
 ```
-kandeel-website/
+PowerGym-Website/
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yml          # GitHub Actions workflow
+│       └── ci.yml          # GitHub Actions workflow
 ├── sites-available/
 │   └── kandeel.conf           # Nginx site configuration
 ├── index.html                 # Main HTML file
-├── styles.css                 # CSS styles
-├── script.js                  # JavaScript functionality
+├── style.css                 # CSS styles
 ├── nginx.conf                 # Nginx main configuration
 ├── Dockerfile                 # Docker configuration
 └── README.md                  # This file
@@ -159,3 +158,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For support, email contact@kandeel.local or create an issue in the repository.
+
