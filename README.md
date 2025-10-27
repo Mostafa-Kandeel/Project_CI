@@ -1,6 +1,6 @@
 # Kandeel Static Website
 
-A modern static website built with HTML, CSS, and JavaScript, deployed using Docker and GitHub Actions CI/CD.
+A modern static website built with HTML, CSS and deployed using Docker and GitHub Actions CI/CD.
 
 ## 🚀 Features
 
@@ -158,4 +158,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For support, email contact@kandeel.local or create an issue in the repository.
+
 
